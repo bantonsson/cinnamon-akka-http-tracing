@@ -1,0 +1,5 @@
+-Xms128M
+-Xmx256M
+-Xss4M
+-XX:+UseCompressedOops
+-XX:+UseG1GC
