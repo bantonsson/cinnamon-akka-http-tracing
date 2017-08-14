@@ -8,7 +8,7 @@ lazy val frontend = project
   .settings(
     scalafmtOnCompile := true,
     scalaVersion := "2.12.3",
-    libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.3" force(),
+    libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.4" force(),
     libraryDependencies += "com.typesafe.akka" %% "akka-http" % "10.0.9",
     libraryDependencies += Cinnamon.library.cinnamonOpenTracingZipkin,
     cinnamon in run := true,
@@ -21,8 +21,8 @@ lazy val service = project
   .settings(
     scalafmtOnCompile := true,
     scalaVersion := "2.12.3",
-    libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.3" force(),
-    libraryDependencies += "com.typesafe.akka" %% "akka-remote" % "2.5.3",
+    libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.4" force(),
+    libraryDependencies += "com.typesafe.akka" %% "akka-remote" % "2.5.4",
     libraryDependencies += "com.typesafe.akka" %% "akka-http" % "10.0.9",
     libraryDependencies += Cinnamon.library.cinnamonOpenTracingZipkin,
     cinnamon in run := true,
@@ -35,7 +35,7 @@ lazy val backend = project
   .settings(
     scalafmtOnCompile := true,
     scalaVersion := "2.12.3",
-    libraryDependencies += "com.typesafe.akka" %% "akka-remote" % "2.5.3",
+    libraryDependencies += "com.typesafe.akka" %% "akka-remote" % "2.5.4",
     libraryDependencies += Cinnamon.library.cinnamonOpenTracingZipkin,
     cinnamon in run := true,
     connectInput in run := true // we wait on stdin
